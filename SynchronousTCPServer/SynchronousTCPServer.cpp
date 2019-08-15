@@ -15,7 +15,7 @@ int main()
 	boost::asio::ip::tcp::socket socket(io_service);
 	acceptor.accept(socket);
 	
-	std::cout << "Å¬¶óÀÌ¾ðÆ® Á¢¼Ó" << std::endl;
+	std::cout << "í´ë¼ì´ì–¸íŠ¸ ì ‘ì†" << std::endl;
 	
 	for (;;)
 	{
@@ -29,7 +29,7 @@ int main()
 		{
 			if( error == boost::asio::error::eof )
 			{
-				std::cout << "Å¬¶óÀÌ¾ðÆ®¿Í ¿¬°áÀÌ ²÷¾îÁ³½À´Ï´Ù" << std::endl;
+				std::cout << "í´ë¼ì´ì–¸íŠ¸ì™€ ì—°ê²°ì´ ëŠì–´ì¡ŒìŠµë‹ˆë‹¤" << std::endl;
 			}
 			else 
 			{
@@ -39,7 +39,7 @@ int main()
 			break;
 		}
 
-		std::cout << "Å¬¶óÀÌ¾ðÆ®¿¡¼­ ¹ÞÀº ¸Þ½ÃÁö: " << &buf[0] << std::endl;
+		std::cout << "í´ë¼ì´ì–¸íŠ¸ì—ì„œ ë°›ì€ ë©”ì‹œì§€: " << &buf[0] << std::endl;
 				
 		char szMessage[128] = {0,};
 		sprintf_s( szMessage, 128-1, "Re:%s", &buf[0] );
@@ -48,7 +48,7 @@ int main()
 		boost::system::error_code ignored_error;
 		socket.write_some(boost::asio::buffer(szMessage, nMsgLen), ignored_error);
 		
-		std::cout << "Å¬¶óÀÌ¾ðÆ®¿¡ º¸³½ ¸Þ½ÃÁö: " << szMessage << std::endl;
+		std::cout << "í´ë¼ì´ì–¸íŠ¸ì— ë³´ë‚¸ ë©”ì‹œì§€: " << szMessage << std::endl;
 	}
     
 	getchar();

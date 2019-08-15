@@ -47,14 +47,14 @@ public:
 
 	void Start()
 	{
-		std::cout << "¼­¹ö ½ÃÀÛ....." << std::endl;
+		std::cout << "ì„œë²„ ì‹œìž‘....." << std::endl;
 
 		PostAccept();
 	}
 
 	void CloseSession( const int nSessionID )
 	{
-		std::cout << "Å¬¶óÀÌ¾ðÆ® Á¢¼Ó Á¾·á. ¼¼¼Ç ID: " << nSessionID << std::endl;
+		std::cout << "í´ë¼ì´ì–¸íŠ¸ ì ‘ì† ì¢…ë£Œ. ì„¸ì…˜ ID: " << nSessionID << std::endl;
 
 		m_SessionList[ nSessionID ]->Socket().close();
 
@@ -77,7 +77,7 @@ public:
 				PKT_REQ_IN* pPacket = (PKT_REQ_IN*)pData;
 				m_SessionList[ nSessionID ]->SetName( pPacket->szName );
 
-				std::cout << "Å¬¶óÀÌ¾ðÆ® ·Î±×ÀÎ ¼º°ø Name: " << m_SessionList[ nSessionID ]->GetName() << std::endl; 
+				std::cout << "í´ë¼ì´ì–¸íŠ¸ ë¡œê·¸ì¸ ì„±ê³µ Name: " << m_SessionList[ nSessionID ]->GetName() << std::endl; 
 
 				PKT_RES_IN SendPkt;
 				SendPkt.Init();
@@ -140,7 +140,7 @@ private:
 	{
 		if (!error)
 		{	
-			std::cout << "Å¬¶óÀÌ¾ðÆ® Á¢¼Ó ¼º°ø. SessionID: " << pSession->SessionID() << std::endl;
+			std::cout << "í´ë¼ì´ì–¸íŠ¸ ì ‘ì† ì„±ê³µ. SessionID: " << pSession->SessionID() << std::endl;
 			
 			pSession->Init();
 			pSession->PostReceive();

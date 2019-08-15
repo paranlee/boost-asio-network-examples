@@ -19,13 +19,13 @@ int main()
 
 	if (connect_error) 
 	{
-        std::cout << "¿¬°á ½ÇÆÐ. error No: " << connect_error.value() << ", Message: " << connect_error.message() << std::endl;
+        std::cout << "ì—°ê²° ì‹¤íŒ¨. error No: " << connect_error.value() << ", Message: " << connect_error.message() << std::endl;
 		getchar();
 		return 0;
     }
     else 
 	{
-        std::cout << "¼­¹ö¿¡ ¿¬°á ¼º°ø" << std::endl;
+        std::cout << "ì„œë²„ì— ì—°ê²° ì„±ê³µ" << std::endl;
     }
 
 
@@ -38,7 +38,7 @@ int main()
 		boost::system::error_code ignored_error;
 		socket.write_some( boost::asio::buffer(szMessage, nMsgLen), ignored_error);
 
-		std::cout << "¼­¹ö¿¡ º¸³½ ¸Þ½ÃÁö: " << szMessage << std::endl;
+		std::cout << "ì„œë²„ì— ë³´ë‚¸ ë©”ì‹œì§€: " << szMessage << std::endl;
 
 
 		std::array<char, 128> buf;
@@ -51,7 +51,7 @@ int main()
 		{
 			if( error == boost::asio::error::eof )
 			{
-				std::cout << "¼­¹ö¿Í ¿¬°áÀÌ ²÷¾îÁ³½À´Ï´Ù" << std::endl;
+				std::cout << "ì„œë²„ì™€ ì—°ê²°ì´ ëŠì–´ì¡ŒìŠµë‹ˆë‹¤" << std::endl;
 			}
 			else 
 			{
@@ -61,7 +61,7 @@ int main()
 			break;
 		}
 
-		std::cout << "¼­¹ö·ÎºÎÅÍ ¹ÞÀº ¸Þ½ÃÁö: " << &buf[0] << std::endl;
+		std::cout << "ì„œë²„ë¡œë¶€í„° ë°›ì€ ë©”ì‹œì§€: " << &buf[0] << std::endl;
 	}
 		
 	if( socket.is_open() )

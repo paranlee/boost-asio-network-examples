@@ -42,7 +42,7 @@ void OnTimer3( const boost::system::error_code& error )
 
 int main()
 {
-	std::cout << "½ÃÀÛ: " << time(NULL) << std::endl;
+	std::cout << "ì‹œìž‘: " << time(NULL) << std::endl;
 
     boost::asio::io_service io_service;
 
@@ -55,10 +55,10 @@ int main()
 	timer.async_wait( OnTimer3 );
 
 	const int count = timer.cancel_one();
-	std::cout << "Å¸ÀÌ¸Ó Ãë¼Ò °³¼ö: " << count << std::endl;
+	std::cout << "íƒ€ì´ë¨¸ ì·¨ì†Œ ê°œìˆ˜: " << count << std::endl;
 
     io_service.run();
 
-	std::cout << "Á¾·á: " << time(NULL) << std::endl;
+	std::cout << "ì¢…ë£Œ: " << time(NULL) << std::endl;
 	return 0;
 }

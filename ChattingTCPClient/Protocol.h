@@ -19,7 +19,7 @@ struct PACKET_HEADER
 
 
 
-//  ÆÐÅ¶
+//  íŒ¨í‚·
 const short REQ_IN		= 1;
 	// PKT_REQ_IN
 

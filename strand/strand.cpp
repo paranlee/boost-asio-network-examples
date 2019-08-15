@@ -44,7 +44,7 @@ void Function( int nNumber )
 	char szMessage[128] = {0,};
 	sprintf_s( szMessage, 128-1, "%s(%d) | time(%d)", __FUNCTION__, nNumber, time(NULL) );
 	{
-		std::cout << "¿öÄ¿ ½º·¹µå ID: " << ::GetCurrentThreadId() << ". " << szMessage << std::endl;
+		std::cout << "ì›Œì»¤ ìŠ¤ë ˆë“œ ID: " << ::GetCurrentThreadId() << ". " << szMessage << std::endl;
 	}
 
 	::Sleep(1000);
@@ -52,7 +52,7 @@ void Function( int nNumber )
 
 int main()
 {
-	std::cout << "¸ÞÀÎ ½º·¹µå ID: " << ::GetCurrentThreadId() << std::endl;
+	std::cout << "ë©”ì¸ ìŠ¤ë ˆë“œ ID: " << ::GetCurrentThreadId() << std::endl;
 
 	boost::asio::io_service io_service;
 	BackGroundJobManager JobManager( io_service, 3 );

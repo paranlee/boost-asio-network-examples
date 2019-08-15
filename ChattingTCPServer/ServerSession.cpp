@@ -86,7 +86,7 @@ void Session::handle_receive( const boost::system::error_code& error, size_t byt
 	{
 		if( error == boost::asio::error::eof )
 		{
-			std::cout << "Å¬¶óÀÌ¾ðÆ®¿Í ¿¬°áÀÌ ²÷¾îÁ³½À´Ï´Ù" << std::endl;
+			std::cout << "í´ë¼ì´ì–¸íŠ¸ì™€ ì—°ê²°ì´ ëŠì–´ì¡ŒìŠµë‹ˆë‹¤" << std::endl;
 		}
 		else 
 		{

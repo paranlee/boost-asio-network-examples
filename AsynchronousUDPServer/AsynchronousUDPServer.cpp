@@ -56,7 +56,7 @@ private:
 		else
 		{
 			const std::string strRecvMessage = m_ReceiveBuffer.data();
-			std::cout << "Å¬¶óÀÌ¾ðÆ®¿¡¼­ ¹ÞÀº ¸Þ½ÃÁö: " << strRecvMessage << ", ¹ÞÀº Å©±â: " << bytes_transferred << 
+			std::cout << "í´ë¼ì´ì–¸íŠ¸ì—ì„œ ë°›ì€ ë©”ì‹œì§€: " << strRecvMessage << ", ë°›ì€ í¬ê¸°: " << bytes_transferred << 
 				", From: " << m_SenderEndpoint.address().to_string().c_str() << " " << m_SenderEndpoint.port() << 
 				std::endl;
 
@@ -88,7 +88,7 @@ private:
 
 int main()
 {
-	std::cout <<  "UDP ¼­¹ö ½ÇÇà..." << std::endl;
+	std::cout <<  "UDP ì„œë²„ ì‹¤í–‰..." << std::endl;
 
 	boost::asio::io_service io_service;
     
@@ -96,7 +96,7 @@ int main()
     
 	io_service.run();
   
-	std::cout << "³×Æ®¿÷ Á¾·á" << std::endl;
+	std::cout << "ë„¤íŠ¸ì› ì¢…ë£Œ" << std::endl;
 
 	getchar();
 	return 0;

@@ -16,7 +16,7 @@ void OnTimer1( const boost::system::error_code& error )
 
 int main()
 {
-	std::cout << "½ÃÀÛ: " << time(NULL) << std::endl;
+	std::cout << "ì‹œìž‘: " << time(NULL) << std::endl;
 
     boost::asio::io_service io_service;
 	io_service.post( Function );
@@ -29,7 +29,7 @@ int main()
 	
 	io_service.poll();
 	
-	std::cout << "Á¾·á: " << time(NULL) << std::endl;
+	std::cout << "ì¢…ë£Œ: " << time(NULL) << std::endl;
 
 	getchar();
 	return 0;

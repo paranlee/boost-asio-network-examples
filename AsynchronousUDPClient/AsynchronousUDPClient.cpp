@@ -72,7 +72,7 @@ public:
 		else
 		{
 			const std::string strRecvMessage = m_ReceiveBuffer.data();
-			std::cout << "Å¬¶óÀÌ¾ðÆ®¿¡¼­ ¹ÞÀº ¸Þ½ÃÁö: " << strRecvMessage << ", ¹ÞÀº Å©±â: " << bytes_transferred << std::endl;
+			std::cout << "í´ë¼ì´ì–¸íŠ¸ì—ì„œ ë°›ì€ ë©”ì‹œì§€: " << strRecvMessage << ", ë°›ì€ í¬ê¸°: " << bytes_transferred << std::endl;
 
 			PostWrite(); 
 		}
@@ -101,7 +101,7 @@ int main()
     io_service.run();
 
 	
-	std:: cout << "³×Æ®¿÷ Á¾·á" << std::endl;
+	std:: cout << "ë„¤íŠ¸ì› ì¢…ë£Œ" << std::endl;
 
 	getchar();
 	return 0;

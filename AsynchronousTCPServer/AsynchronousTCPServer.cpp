@@ -48,7 +48,7 @@ private:
 		{
 			if( error == boost::asio::error::eof )
 			{
-				std::cout << "Å¬¶óÀÌ¾ðÆ®¿Í ¿¬°áÀÌ ²÷¾îÁ³½À´Ï´Ù" << std::endl;
+				std::cout << "í´ë¼ì´ì–¸íŠ¸ì™€ ì—°ê²°ì´ ëŠì–´ì¡ŒìŠµë‹ˆë‹¤" << std::endl;
 			}
 			else 
 			{
@@ -58,7 +58,7 @@ private:
 		else
 		{
 			const std::string strRecvMessage = m_ReceiveBuffer.data();
-			std::cout << "Å¬¶óÀÌ¾ðÆ®¿¡¼­ ¹ÞÀº ¸Þ½ÃÁö: " << strRecvMessage << ", ¹ÞÀº Å©±â: " << bytes_transferred << std::endl;
+			std::cout << "í´ë¼ì´ì–¸íŠ¸ì—ì„œ ë°›ì€ ë©”ì‹œì§€: " << strRecvMessage << ", ë°›ì€ í¬ê¸°: " << bytes_transferred << std::endl;
 
 			char szMessage[128] = {0,};
 			sprintf_s( szMessage, 128-1, "Re:%s", strRecvMessage.c_str() );
@@ -103,7 +103,7 @@ public:
 private:
 	void StartAccept()
 	{
-		std::cout << "Å¬¶óÀÌ¾ðÆ® Á¢¼Ó ´ë±â....." << std::endl;
+		std::cout << "í´ë¼ì´ì–¸íŠ¸ ì ‘ì† ëŒ€ê¸°....." << std::endl;
 
 		m_pSession = new Session(m_acceptor.get_io_service());
 		
@@ -119,7 +119,7 @@ private:
 	{
 		if (!error)
 		{	
-			std::cout << "Å¬¶óÀÌ¾ðÆ® Á¢¼Ó ¼º°ø" << std::endl;
+			std::cout << "í´ë¼ì´ì–¸íŠ¸ ì ‘ì† ì„±ê³µ" << std::endl;
 			
 			pSession->PostReceive();
 		}
@@ -139,7 +139,7 @@ int main()
 	io_service.run();
   
 
-	std:: cout << "³×Æ®¿÷ Á¢¼Ó Á¾·á" << std::endl;
+	std:: cout << "ë„¤íŠ¸ì› ì ‘ì† ì¢…ë£Œ" << std::endl;
 
 	getchar();
 	return 0;

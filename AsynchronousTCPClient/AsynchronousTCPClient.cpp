@@ -96,7 +96,7 @@ private:
 		{
 			if( error == boost::asio::error::eof )
 			{
-				std::cout << "¼­¹ö¿Í ¿¬°áÀÌ ²÷¾îÁ³½À´Ï´Ù" << std::endl;
+				std::cout << "ì„œë²„ì™€ ì—°ê²°ì´ ëŠì–´ì¡ŒìŠµë‹ˆë‹¤" << std::endl;
 			}
 			else 
 			{
@@ -106,7 +106,7 @@ private:
 		else
 		{
 			const std::string strRecvMessage = m_ReceiveBuffer.data();
-			std::cout << "¼­¹ö¿¡¼­ ¹ÞÀº ¸Þ½ÃÁö: " << strRecvMessage << ", ¹ÞÀº Å©±â: " << bytes_transferred << std::endl;
+			std::cout << "ì„œë²„ì—ì„œ ë°›ì€ ë©”ì‹œì§€: " << strRecvMessage << ", ë°›ì€ í¬ê¸°: " << bytes_transferred << std::endl;
 
 			PostWrite(); 
 		}
@@ -137,7 +137,7 @@ int main()
     io_service.run();
 
 	
-	std:: cout << "³×Æ®¿÷ Á¢¼Ó Á¾·á" << std::endl;
+	std:: cout << "ë„¤íŠ¸ì› ì ‘ì† ì¢…ë£Œ" << std::endl;
 
 	getchar();
 	return 0;

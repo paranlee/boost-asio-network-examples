@@ -55,6 +55,6 @@ int main()
 	   
     io_service.run();
 
-	std::cout << "Á¾·á: " << time(NULL) << std::endl;
+	std::cout << "ì¢…ë£Œ: " << time(NULL) << std::endl;
 	return 0;
 }

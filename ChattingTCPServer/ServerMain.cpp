@@ -18,7 +18,7 @@ int main()
 	io_service.run();
   
 
-	std:: cout << "³×Æ®¿÷ Á¢¼Ó Á¾·á" << std::endl;
+	std:: cout << "ë„¤íŠ¸ì› ì ‘ì† ì¢…ë£Œ" << std::endl;
 
 	getchar();
 	return 0;

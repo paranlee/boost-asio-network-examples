@@ -61,7 +61,7 @@ public:
 	{
 		char* pSendData = nullptr;
 
-		EnterCriticalSection(&m_lock);		// ¶ô ½ÃÀÛ
+		EnterCriticalSection(&m_lock);		// ë½ ì‹œì‘
 		
 		if( bImmediately == false )
 		{
@@ -84,7 +84,7 @@ public:
 									);
 		}
 
-		LeaveCriticalSection(&m_lock);		// ¶ô ¿Ï·á
+		LeaveCriticalSection(&m_lock);		// ë½ ì™„ë£Œ
 	}
 
 	
@@ -109,20 +109,20 @@ private:
 	{
 		if (!error)
 		{	
-			std::cout << "¼­¹ö Á¢¼Ó ¼º°ø" << std::endl;
-			std::cout << "ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä!!" << std::endl;
+			std::cout << "ì„œë²„ ì ‘ì† ì„±ê³µ" << std::endl;
+			std::cout << "ì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš”!!" << std::endl;
 
 			PostReceive();
 		}
 		else
 		{
-			std::cout << "¼­¹ö Á¢¼Ó ½ÇÆĞ. error No: " << error.value() << " error Message: " << error.message() << std::endl;
+			std::cout << "ì„œë²„ ì ‘ì† ì‹¤íŒ¨. error No: " << error.value() << " error Message: " << error.message() << std::endl;
 		}
 	}
 
 	void handle_write(const boost::system::error_code& error, size_t bytes_transferred)
 	{
-		EnterCriticalSection(&m_lock);			// ¶ô ½ÃÀÛ
+		EnterCriticalSection(&m_lock);			// ë½ ì‹œì‘
 
 		delete[] m_SendDataQueue.front();
 		m_SendDataQueue.pop_front();
@@ -134,7 +134,7 @@ private:
 			pData = m_SendDataQueue.front();
 		}
 		
-		LeaveCriticalSection(&m_lock);			// ¶ô ¿Ï·á
+		LeaveCriticalSection(&m_lock);			// ë½ ì™„ë£Œ
 
 		
 		if( pData != nullptr )
@@ -150,7 +150,7 @@ private:
 		{
 			if( error == boost::asio::error::eof )
 			{
-				std::cout << "Å¬¶óÀÌ¾ğÆ®¿Í ¿¬°áÀÌ ²÷¾îÁ³½À´Ï´Ù" << std::endl;
+				std::cout << "í´ë¼ì´ì–¸íŠ¸ì™€ ì—°ê²°ì´ ëŠì–´ì¡ŒìŠµë‹ˆë‹¤" << std::endl;
 			}
 			else 
 			{
@@ -214,7 +214,7 @@ private:
 				
 				LoginOK();
 				
-				std::cout << "Å¬¶óÀÌ¾ğÆ® ·Î±×ÀÎ ¼º°ø ?: " << pPacket->bIsSuccess << std::endl; 
+				std::cout << "í´ë¼ì´ì–¸íŠ¸ ë¡œê·¸ì¸ ì„±ê³µ ?: " << pPacket->bIsSuccess << std::endl; 
 			}
 			break;
 		case NOTICE_CHAT:
@@ -270,7 +270,7 @@ int main()
 
 		if( Cliet.IsConnecting() == false )
 		{
-			std::cout << "¼­¹ö¿Í ¿¬°áµÇÁö ¾Ê¾Ò½À´Ï´Ù" << std::endl;
+			std::cout << "ì„œë²„ì™€ ì—°ê²°ë˜ì§€ ì•Šì•˜ìŠµë‹ˆë‹¤" << std::endl;
 			continue;
 		}
 
@@ -298,7 +298,7 @@ int main()
 	
     thread.join();
   
-	std::cout << "Å¬¶óÀÌ¾ğÆ®¸¦ Á¾·áÇØ ÁÖ¼¼¿ä" << std::endl;
+	std::cout << "í´ë¼ì´ì–¸íŠ¸ë¥¼ ì¢…ë£Œí•´ ì£¼ì„¸ìš”" << std::endl;
 
 	return 0;
 }

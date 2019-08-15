@@ -1,4 +1,4 @@
-// ÃâÃ³ : http://d.hatena.ne.jp/faith_and_brave/20110322/1300777903 
+// ì¶œì²˜ : http://d.hatena.ne.jp/faith_and_brave/20110322/1300777903 
 
 #include <SDKDDKVer.h>
 
