@@ -7,18 +7,18 @@
 void OnTimer( const boost::system::error_code& error )
 {
     if( !error ) 
-	{
+    {
         std::cout << "Call OnTimer!!! " << time(NULL) << std::endl;
     }
-	else
-	{
-		std::cout << "error No: " << error.value() << " error Message: " << error.message() << std::endl;
-	}
+    else
+    {
+        std::cout << "error No: " << error.value() << " error Message: " << error.message() << std::endl;
+    }
 }
 
 int main()
 {
-	std::cout << "시작: " << time(NULL) << std::endl;
+    std::cout << "시작: " << time(NULL) << std::endl;
 
     boost::asio::io_service io_service;
 
@@ -30,6 +30,6 @@ int main()
 
     io_service.run();
 
-	std::cout << "종료: " << time(NULL) << std::endl;
-	return 0;
+    std::cout << "종료: " << time(NULL) << std::endl;
+    return 0;
 }
