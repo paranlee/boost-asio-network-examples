@@ -1,5 +1,3 @@
-#include <SDKDDKVer.h>
-
 #include <iostream>
 #include <boost/bind.hpp>
 #include <boost/asio.hpp>

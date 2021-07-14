@@ -1,6 +1,3 @@
-#pragma once
-#include <SDKDDKVer.h>
-
 #include <deque>
 
 #include <boost/bind.hpp>
