@@ -11,48 +11,48 @@
 
 void read_end( const boost::system::error_code& error, const std::vector<char>& result )
 {
-	if (error)
-	{
-		std::cout << error.message() << std::endl;
-	}
-	else 
-	{
-		const std::string s(result.begin(), result.end());
-		std::cout << "success : " << s << std::endl;
-	}
+    if (error)
+    {
+        std::cout << error.message() << std::endl;
+    }
+    else 
+    {
+        const std::string s(result.begin(), result.end());
+        std::cout << "success : " << s << std::endl;
+    }
 }
 
 
 int main()
 {
-	boost::asio::io_service io_service;
+    boost::asio::io_service io_service;
 
-	HANDLE handle = ::CreateFileA( "AsyncReadFile.txt",
-									GENERIC_READ,
-									FILE_SHARE_READ,
-									NULL,
-									OPEN_EXISTING,
-									FILE_FLAG_OVERLAPPED,
-									NULL );
+    HANDLE handle = ::CreateFileA( "AsyncReadFile.txt",
+                                    GENERIC_READ,
+                                    FILE_SHARE_READ,
+                                    NULL,
+                                    OPEN_EXISTING,
+                                    FILE_FLAG_OVERLAPPED,
+                                    NULL );
 
-	if (handle == INVALID_HANDLE_VALUE) 
-	{
-		std::cout << "cannot open" << std::endl;
-		return 0;
-	}
+    if (handle == INVALID_HANDLE_VALUE) 
+    {
+        std::cout << "cannot open" << std::endl;
+        return 0;
+    }
 
-	std::vector<char> buffer(::GetFileSize(handle, NULL));
+    std::vector<char> buffer(::GetFileSize(handle, NULL));
 
-	boost::asio::windows::stream_handle file(io_service, handle);
+    boost::asio::windows::stream_handle file(io_service, handle);
 
-	boost::asio::async_read( file, 
-							boost::asio::buffer(buffer.data(), buffer.size()),
-							boost::bind(read_end, _1, boost::ref(buffer))
-							);
+    boost::asio::async_read( file, 
+                            boost::asio::buffer(buffer.data(), buffer.size()),
+                            boost::bind(read_end, _1, boost::ref(buffer))
+                            );
 
-	io_service.run();
+    io_service.run();
 
-	getchar();
-	::CloseHandle(handle);
-	return 0;
+    getchar();
+    ::CloseHandle(handle);
+    return 0;
 }
