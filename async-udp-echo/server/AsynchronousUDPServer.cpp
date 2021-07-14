@@ -1,4 +1,4 @@
-#include <SDKDDKVer.h>
+
 #include <iostream>
 #include <algorithm>
 #include <string>

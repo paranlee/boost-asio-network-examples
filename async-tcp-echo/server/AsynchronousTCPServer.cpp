@@ -1,11 +1,10 @@
-#include <SDKDDKVer.h>
+
 #include <iostream>
 #include <algorithm>
 #include <string>
 #include <list>
 #include <boost/bind.hpp>
 #include <boost/asio.hpp>
-
 
 
 class Session 

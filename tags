@@ -1,0 +1,244 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+0	.vscode/c_cpp_properties.json	/^                "${workspaceFolder}\/**"$/;"	s	array:configurations.0.includePath
+0	.vscode/c_cpp_properties.json	/^                "_DEBUG",$/;"	s	array:configurations.0.defines
+0	.vscode/c_cpp_properties.json	/^        {$/;"	o	array:configurations
+1	.vscode/c_cpp_properties.json	/^                "UNICODE",$/;"	s	array:configurations.0.defines
+2	.vscode/c_cpp_properties.json	/^                "_UNICODE"$/;"	s	array:configurations.0.defines
+BackGroundJobManager	strand/strand.cpp	/^    BackGroundJobManager( boost::asio::io_service& io_service, std::size_t size) $/;"	f	class:BackGroundJobManager	file:
+BackGroundJobManager	strand/strand.cpp	/^class BackGroundJobManager $/;"	c	file:
+BackGroundJobManager	worker-thread/WorkerThread.cpp	/^    BackGroundJobManager( boost::asio::io_service& io_service, std::size_t size) $/;"	f	class:BackGroundJobManager	file:
+BackGroundJobManager	worker-thread/WorkerThread.cpp	/^class BackGroundJobManager $/;"	c	file:
+CLIENT_PORT_NUMBER	async-udp-echo/client/AsynchronousUDPClient.cpp	/^const unsigned short CLIENT_PORT_NUMBER = 31401;$/;"	v	typeref:typename:const unsigned short
+CLIENT_PORT_NUMBER	async-udp-echo/server/AsynchronousUDPServer.cpp	/^const unsigned short CLIENT_PORT_NUMBER = 31401;$/;"	v	typeref:typename:const unsigned short
+ChatClient	async-tcp-chatting/client/ChattingTCPClient.cpp	/^    explicit ChatClient(const boost::asio::io_service& io_service)$/;"	f	class:ChatClient	file:
+ChatClient	async-tcp-chatting/client/ChattingTCPClient.cpp	/^class ChatClient {$/;"	c	file:
+ChatServer	async-tcp-chatting/server/ChattingServer.h	/^    ChatServer( boost::asio::io_service& io_service )$/;"	f	class:ChatServer
+ChatServer	async-tcp-chatting/server/ChattingServer.h	/^class ChatServer$/;"	c
+Close	async-tcp-chatting/client/ChattingTCPClient.cpp	/^    void Close() {$/;"	f	class:ChatClient	typeref:typename:void	file:
+CloseSession	async-tcp-chatting/server/ChattingServer.h	/^    void CloseSession( const int nSessionID )$/;"	f	class:ChatServer	typeref:typename:void
+Connect	async-tcp-chatting/client/ChattingTCPClient.cpp	/^    void Connect(boost::asio::ip::tcp::endpoint endpoint) {$/;"	f	class:ChatClient	typeref:typename:void	file:
+Connect	async-tcp-echo/client/AsynchronousTCPClient.cpp	/^    void Connect( boost::asio::ip::tcp::endpoint& endpoint )$/;"	f	class:TCP_Client	typeref:typename:void	file:
+Function	poll/poll.cpp	/^void Function()$/;"	f	typeref:typename:void
+Function	strand/strand.cpp	/^void Function( int nNumber )$/;"	f	typeref:typename:void
+Function	worker-thread/WorkerThread.cpp	/^    void Function( int nNumber ) $/;"	f	class:TEST	typeref:typename:void	file:
+Function	worker-thread/WorkerThread.cpp	/^void Function( int nNumber )$/;"	f	typeref:typename:void
+GetName	async-tcp-chatting/server/ServerSession.h	/^    const char* GetName()                { return m_Name.c_str(); }$/;"	f	class:Session	typeref:typename:const char *
+Init	async-tcp-chatting/client/Protocol.h	/^    void Init()$/;"	f	struct:PKT_NOTICE_CHAT	typeref:typename:void
+Init	async-tcp-chatting/client/Protocol.h	/^    void Init()$/;"	f	struct:PKT_REQ_CHAT	typeref:typename:void
+Init	async-tcp-chatting/client/Protocol.h	/^    void Init()$/;"	f	struct:PKT_REQ_IN	typeref:typename:void
+Init	async-tcp-chatting/client/Protocol.h	/^    void Init()$/;"	f	struct:PKT_RES_IN	typeref:typename:void
+Init	async-tcp-chatting/server/ChattingServer.h	/^    void Init( const int nMaxSessionCount )$/;"	f	class:ChatServer	typeref:typename:void
+Init	async-tcp-chatting/server/Protocol.h	/^    void Init()$/;"	f	struct:PKT_NOTICE_CHAT	typeref:typename:void
+Init	async-tcp-chatting/server/Protocol.h	/^    void Init()$/;"	f	struct:PKT_REQ_CHAT	typeref:typename:void
+Init	async-tcp-chatting/server/Protocol.h	/^    void Init()$/;"	f	struct:PKT_REQ_IN	typeref:typename:void
+Init	async-tcp-chatting/server/Protocol.h	/^    void Init()$/;"	f	struct:PKT_RES_IN	typeref:typename:void
+Init	async-tcp-chatting/server/ServerSession.cpp	/^void Session::Init()$/;"	f	class:Session	typeref:typename:void
+IsConnecting	async-tcp-chatting/client/ChattingTCPClient.cpp	/^    bool IsConnecting() { return m_Socket.is_open(); }$/;"	f	class:ChatClient	typeref:typename:bool	file:
+IsLogin	async-tcp-chatting/client/ChattingTCPClient.cpp	/^    bool IsLogin() { return m_bIsLogin; }$/;"	f	class:ChatClient	typeref:typename:bool	file:
+LoginOK	async-tcp-chatting/client/ChattingTCPClient.cpp	/^    void LoginOK() { m_bIsLogin = true; }$/;"	f	class:ChatClient	typeref:typename:void	file:
+MAX_MESSAGE_LEN	async-tcp-chatting/client/Protocol.h	/^const int MAX_MESSAGE_LEN = 129;$/;"	v	typeref:typename:const int
+MAX_MESSAGE_LEN	async-tcp-chatting/server/Protocol.h	/^const int MAX_MESSAGE_LEN = 129;$/;"	v	typeref:typename:const int
+MAX_NAME_LEN	async-tcp-chatting/client/Protocol.h	/^const int MAX_NAME_LEN = 17;$/;"	v	typeref:typename:const int
+MAX_NAME_LEN	async-tcp-chatting/server/Protocol.h	/^const int MAX_NAME_LEN = 17;$/;"	v	typeref:typename:const int
+MAX_RECEIVE_BUFFER_LEN	async-tcp-chatting/client/Protocol.h	/^const int MAX_RECEIVE_BUFFER_LEN = 512;$/;"	v	typeref:typename:const int
+MAX_RECEIVE_BUFFER_LEN	async-tcp-chatting/server/Protocol.h	/^const int MAX_RECEIVE_BUFFER_LEN = 512;$/;"	v	typeref:typename:const int
+MAX_SESSION_COUNT	async-tcp-chatting/server/ServerMain.cpp	/^const int MAX_SESSION_COUNT = 100;$/;"	v	typeref:typename:const int
+NOTICE_CHAT	async-tcp-chatting/client/Protocol.h	/^const short NOTICE_CHAT = 7;$/;"	v	typeref:typename:const short
+NOTICE_CHAT	async-tcp-chatting/server/Protocol.h	/^const short NOTICE_CHAT = 7;$/;"	v	typeref:typename:const short
+OnResolve	resolver/resolver.cpp	/^void OnResolve(const boost::system::error_code& error, boost::asio::ip::tcp::resolver::iterator /;"	f	typeref:typename:void
+OnTimer	timer/Timer1/Timer1.cpp	/^void OnTimer( const boost::system::error_code& error )$/;"	f	typeref:typename:void
+OnTimer	timer/Timer2/Timer2.cpp	/^void OnTimer( const boost::system::error_code& error, boost::asio::steady_timer* pTimer )$/;"	f	typeref:typename:void
+OnTimer1	poll/poll.cpp	/^void OnTimer1( const boost::system::error_code& error )$/;"	f	typeref:typename:void
+OnTimer1	timer/Timer3/Timer3.cpp	/^void OnTimer1( const boost::system::error_code& error )$/;"	f	typeref:typename:void
+OnTimer1	timer/Timer4/Timer4.cpp	/^void OnTimer1( const boost::system::error_code& error )$/;"	f	typeref:typename:void
+OnTimer2	timer/Timer3/Timer3.cpp	/^void OnTimer2( const boost::system::error_code& error )$/;"	f	typeref:typename:void
+OnTimer2	timer/Timer4/Timer4.cpp	/^void OnTimer2( const boost::system::error_code& error )$/;"	f	typeref:typename:void
+OnTimer3	timer/Timer4/Timer4.cpp	/^void OnTimer3( const boost::system::error_code& error )$/;"	f	typeref:typename:void
+PACKET_HEADER	async-tcp-chatting/client/Protocol.h	/^struct PACKET_HEADER$/;"	s
+PACKET_HEADER	async-tcp-chatting/server/Protocol.h	/^struct PACKET_HEADER$/;"	s
+PKT_NOTICE_CHAT	async-tcp-chatting/client/Protocol.h	/^struct PKT_NOTICE_CHAT : public PACKET_HEADER$/;"	s
+PKT_NOTICE_CHAT	async-tcp-chatting/server/Protocol.h	/^struct PKT_NOTICE_CHAT : public PACKET_HEADER$/;"	s
+PKT_REQ_CHAT	async-tcp-chatting/client/Protocol.h	/^struct PKT_REQ_CHAT : public PACKET_HEADER$/;"	s
+PKT_REQ_CHAT	async-tcp-chatting/server/Protocol.h	/^struct PKT_REQ_CHAT : public PACKET_HEADER$/;"	s
+PKT_REQ_IN	async-tcp-chatting/client/Protocol.h	/^struct PKT_REQ_IN : public PACKET_HEADER$/;"	s
+PKT_REQ_IN	async-tcp-chatting/server/Protocol.h	/^struct PKT_REQ_IN : public PACKET_HEADER$/;"	s
+PKT_RES_IN	async-tcp-chatting/client/Protocol.h	/^struct PKT_RES_IN : public PACKET_HEADER$/;"	s
+PKT_RES_IN	async-tcp-chatting/server/Protocol.h	/^struct PKT_RES_IN : public PACKET_HEADER$/;"	s
+PORT_NUMBER	async-tcp-chatting/client/Protocol.h	/^const unsigned short PORT_NUMBER = 31400;$/;"	v	typeref:typename:const unsigned short
+PORT_NUMBER	async-tcp-chatting/server/Protocol.h	/^const unsigned short PORT_NUMBER = 31400;$/;"	v	typeref:typename:const unsigned short
+PORT_NUMBER	async-tcp-echo/client/AsynchronousTCPClient.cpp	/^const unsigned short PORT_NUMBER = 31400;$/;"	v	typeref:typename:const unsigned short
+PORT_NUMBER	async-tcp-echo/server/AsynchronousTCPServer.cpp	/^const unsigned short PORT_NUMBER = 31400;$/;"	v	typeref:typename:const unsigned short
+PORT_NUMBER	sync-tcp-echo/SynchronousTCPClient/SynchronousTCPClient.cpp	/^const unsigned short PORT_NUMBER = 31400;$/;"	v	typeref:typename:const unsigned short
+PORT_NUMBER	sync-tcp-echo/SynchronousTCPServer/SynchronousTCPServer.cpp	/^const unsigned short PORT_NUMBER = 31400;$/;"	v	typeref:typename:const unsigned short
+PostAccept	async-tcp-chatting/server/ChattingServer.h	/^    bool PostAccept()$/;"	f	class:ChatServer	typeref:typename:bool
+PostReceive	async-tcp-chatting/client/ChattingTCPClient.cpp	/^    void PostReceive() {$/;"	f	class:ChatClient	typeref:typename:void	file:
+PostReceive	async-tcp-chatting/server/ServerSession.cpp	/^void Session::PostReceive()$/;"	f	class:Session	typeref:typename:void
+PostReceive	async-tcp-echo/client/AsynchronousTCPClient.cpp	/^    void PostReceive()$/;"	f	class:TCP_Client	typeref:typename:void	file:
+PostReceive	async-tcp-echo/server/AsynchronousTCPServer.cpp	/^    void PostReceive()$/;"	f	class:Session	typeref:typename:void	file:
+PostReceive	async-udp-echo/client/AsynchronousUDPClient.cpp	/^    void PostReceive()$/;"	f	class:UDP_Client	typeref:typename:void	file:
+PostReceive	async-udp-echo/server/AsynchronousUDPServer.cpp	/^    void PostReceive()$/;"	f	class:UDP_Server	typeref:typename:void	file:
+PostSend	async-tcp-chatting/client/ChattingTCPClient.cpp	/^    void PostSend(const bool bImmediately, const int nSize, char* pData) {$/;"	f	class:ChatClient	typeref:typename:void	file:
+PostSend	async-tcp-chatting/server/ServerSession.cpp	/^void Session::PostSend( const bool bImmediately, const int nSize, char* pData )$/;"	f	class:Session	typeref:typename:void
+PostWrite	async-tcp-echo/client/AsynchronousTCPClient.cpp	/^    void PostWrite()$/;"	f	class:TCP_Client	typeref:typename:void	file:
+PostWrite	async-udp-echo/client/AsynchronousUDPClient.cpp	/^      void PostWrite()$/;"	f	class:UDP_Client	typeref:typename:void	file:
+ProcessPacket	async-tcp-chatting/client/ChattingTCPClient.cpp	/^    void ProcessPacket(const char *pData) {$/;"	f	class:ChatClient	typeref:typename:void	file:
+ProcessPacket	async-tcp-chatting/server/ChattingServer.h	/^    void ProcessPacket( const int nSessionID, const char*pData )$/;"	f	class:ChatServer	typeref:typename:void
+REQ_CHAT	async-tcp-chatting/client/Protocol.h	/^const short REQ_CHAT    = 6;$/;"	v	typeref:typename:const short
+REQ_CHAT	async-tcp-chatting/server/Protocol.h	/^const short REQ_CHAT    = 6;$/;"	v	typeref:typename:const short
+REQ_IN	async-tcp-chatting/client/Protocol.h	/^const short REQ_IN        = 1;$/;"	v	typeref:typename:const short
+REQ_IN	async-tcp-chatting/server/Protocol.h	/^const short REQ_IN        = 1;$/;"	v	typeref:typename:const short
+RES_IN	async-tcp-chatting/client/Protocol.h	/^const short RES_IN        = 2;$/;"	v	typeref:typename:const short
+RES_IN	async-tcp-chatting/server/Protocol.h	/^const short RES_IN        = 2;$/;"	v	typeref:typename:const short
+SERVER_IP	async-tcp-echo/client/AsynchronousTCPClient.cpp	/^const char SERVER_IP[] = "127.0.0.1";$/;"	v	typeref:typename:const char[]
+SERVER_IP	sync-tcp-echo/SynchronousTCPClient/SynchronousTCPClient.cpp	/^const char SERVER_IP[] = "127.0.0.1";$/;"	v	typeref:typename:const char[]
+SERVER_IP	sync-tcp-echo/SynchronousTCPServer/SynchronousTCPServer.cpp	/^const char SERVER_IP[] = "127.0.0.1";$/;"	v	typeref:typename:const char[]
+SERVER_PORT_NUMBER	async-udp-echo/client/AsynchronousUDPClient.cpp	/^const unsigned short SERVER_PORT_NUMBER = 31400;$/;"	v	typeref:typename:const unsigned short
+SERVER_PORT_NUMBER	async-udp-echo/server/AsynchronousUDPServer.cpp	/^const unsigned short SERVER_PORT_NUMBER = 31400;$/;"	v	typeref:typename:const unsigned short
+Session	async-tcp-chatting/server/ServerSession.cpp	/^Session::Session(int nSessionID, boost::asio::io_service& io_service, ChatServer* pServer)$/;"	f	class:Session
+Session	async-tcp-chatting/server/ServerSession.h	/^class Session $/;"	c
+Session	async-tcp-echo/server/AsynchronousTCPServer.cpp	/^    Session(boost::asio::io_service& io_service)$/;"	f	class:Session	file:
+Session	async-tcp-echo/server/AsynchronousTCPServer.cpp	/^class Session $/;"	c	file:
+SessionID	async-tcp-chatting/server/ServerSession.h	/^    int SessionID() { return m_nSessionID; }$/;"	f	class:Session	typeref:typename:int
+SetName	async-tcp-chatting/server/ServerSession.h	/^    void SetName( const char* pszName ) { m_Name = pszName; }$/;"	f	class:Session	typeref:typename:void
+SetTimer	timer/Timer2/Timer2.cpp	/^void SetTimer( boost::asio::steady_timer* pTimer )$/;"	f	typeref:typename:void
+Socket	async-tcp-chatting/server/ServerSession.h	/^    boost::asio::ip::tcp::socket& Socket() { return m_Socket; }$/;"	f	class:Session	typeref:typename:boost::asio::ip::tcp::socket &
+Socket	async-tcp-echo/server/AsynchronousTCPServer.cpp	/^    boost::asio::ip::tcp::socket& Socket()$/;"	f	class:Session	typeref:typename:boost::asio::ip::tcp::socket &	file:
+Start	async-tcp-chatting/server/ChattingServer.h	/^    void Start()$/;"	f	class:ChatServer	typeref:typename:void
+StartAccept	async-tcp-echo/server/AsynchronousTCPServer.cpp	/^    void StartAccept()$/;"	f	class:TCP_Server	typeref:typename:void	file:
+TCP_Client	async-tcp-echo/client/AsynchronousTCPClient.cpp	/^    TCP_Client(boost::asio::io_service& io_service)$/;"	f	class:TCP_Client	file:
+TCP_Client	async-tcp-echo/client/AsynchronousTCPClient.cpp	/^class TCP_Client $/;"	c	file:
+TCP_Server	async-tcp-echo/server/AsynchronousTCPServer.cpp	/^    TCP_Server( boost::asio::io_service& io_service )$/;"	f	class:TCP_Server	file:
+TCP_Server	async-tcp-echo/server/AsynchronousTCPServer.cpp	/^class TCP_Server$/;"	c	file:
+TEST	worker-thread/WorkerThread.cpp	/^    TEST() { }$/;"	f	class:TEST	file:
+TEST	worker-thread/WorkerThread.cpp	/^class TEST$/;"	c	file:
+UDP_Client	async-udp-echo/client/AsynchronousUDPClient.cpp	/^    UDP_Client(boost::asio::io_service& io_service)$/;"	f	class:UDP_Client	file:
+UDP_Client	async-udp-echo/client/AsynchronousUDPClient.cpp	/^class UDP_Client $/;"	c	file:
+UDP_IP	async-udp-echo/client/AsynchronousUDPClient.cpp	/^const char UDP_IP[] = "127.0.0.1";$/;"	v	typeref:typename:const char[]
+UDP_IP	async-udp-echo/server/AsynchronousUDPServer.cpp	/^const char UDP_IP[] = "127.0.0.1";$/;"	v	typeref:typename:const char[]
+UDP_Server	async-udp-echo/server/AsynchronousUDPServer.cpp	/^    UDP_Server( boost::asio::io_service& io_service )$/;"	f	class:UDP_Server	file:
+UDP_Server	async-udp-echo/server/AsynchronousUDPServer.cpp	/^class UDP_Server$/;"	c	file:
+bIsSuccess	async-tcp-chatting/client/Protocol.h	/^    bool bIsSuccess;$/;"	m	struct:PKT_RES_IN	typeref:typename:bool
+bIsSuccess	async-tcp-chatting/server/Protocol.h	/^    bool bIsSuccess;$/;"	m	struct:PKT_RES_IN	typeref:typename:bool
+cStandard	.vscode/c_cpp_properties.json	/^            "cStandard": "c17",$/;"	s	object:configurations.0
+configurations	.vscode/c_cpp_properties.json	/^    "configurations": [$/;"	a
+cppStandard	.vscode/c_cpp_properties.json	/^            "cppStandard": "c++20",$/;"	s	object:configurations.0
+defines	.vscode/c_cpp_properties.json	/^            "defines": [$/;"	a	object:configurations.0
+g_mutex	worker-thread/WorkerThread.cpp	/^boost::mutex g_mutex;$/;"	v	typeref:typename:boost::mutex
+handle_accept	async-tcp-chatting/server/ChattingServer.h	/^    void handle_accept(Session* pSession, const boost::system::error_code& error)$/;"	f	class:ChatServer	typeref:typename:void
+handle_accept	async-tcp-echo/server/AsynchronousTCPServer.cpp	/^    void handle_accept(Session* pSession, const boost::system::error_code& error)$/;"	f	class:TCP_Server	typeref:typename:void	file:
+handle_connect	async-tcp-chatting/client/ChattingTCPClient.cpp	/^    void handle_connect(const boost::system::error_code& error) {$/;"	f	class:ChatClient	typeref:typename:void	file:
+handle_connect	async-tcp-echo/client/AsynchronousTCPClient.cpp	/^    void handle_connect(const boost::system::error_code& error)$/;"	f	class:TCP_Client	typeref:typename:void	file:
+handle_receive	async-tcp-chatting/client/ChattingTCPClient.cpp	/^    void handle_receive(const boost::system::error_code& error,$/;"	f	class:ChatClient	typeref:typename:void	file:
+handle_receive	async-tcp-chatting/server/ServerSession.cpp	/^void Session::handle_receive( const boost::system::error_code& error, size_t bytes_transferred )$/;"	f	class:Session	typeref:typename:void
+handle_receive	async-tcp-echo/client/AsynchronousTCPClient.cpp	/^    void handle_receive( const boost::system::error_code& error, size_t bytes_transferred )$/;"	f	class:TCP_Client	typeref:typename:void	file:
+handle_receive	async-tcp-echo/server/AsynchronousTCPServer.cpp	/^    void handle_receive( const boost::system::error_code& error, size_t bytes_transferred )$/;"	f	class:Session	typeref:typename:void	file:
+handle_receive	async-udp-echo/client/AsynchronousUDPClient.cpp	/^    void handle_receive( const boost::system::error_code& error, size_t bytes_transferred )$/;"	f	class:UDP_Client	typeref:typename:void	file:
+handle_receive	async-udp-echo/server/AsynchronousUDPServer.cpp	/^    void handle_receive( const boost::system::error_code& error, size_t bytes_transferred )$/;"	f	class:UDP_Server	typeref:typename:void	file:
+handle_write	async-tcp-chatting/client/ChattingTCPClient.cpp	/^    void handle_write(const boost::system::error_code& error,$/;"	f	class:ChatClient	typeref:typename:void	file:
+handle_write	async-tcp-chatting/server/ServerSession.cpp	/^void Session::handle_write(const boost::system::error_code& error, size_t bytes_transferred)$/;"	f	class:Session	typeref:typename:void
+handle_write	async-tcp-echo/client/AsynchronousTCPClient.cpp	/^    void handle_write(const boost::system::error_code& \/*error*\/, size_t \/*bytes_transferred*/;"	f	class:TCP_Client	typeref:typename:void	file:
+handle_write	async-tcp-echo/server/AsynchronousTCPServer.cpp	/^    void handle_write(const boost::system::error_code& \/*error*\/, size_t \/*bytes_transferred*/;"	f	class:Session	typeref:typename:void	file:
+handle_write	async-udp-echo/client/AsynchronousUDPClient.cpp	/^    void handle_write(const boost::system::error_code& \/*error*\/, size_t \/*bytes_transferred*/;"	f	class:UDP_Client	typeref:typename:void	file:
+handle_write	async-udp-echo/server/AsynchronousUDPServer.cpp	/^    void handle_write(const boost::system::error_code& \/*error*\/, size_t \/*bytes_transferred*/;"	f	class:UDP_Server	typeref:typename:void	file:
+includePath	.vscode/c_cpp_properties.json	/^            "includePath": [$/;"	a	object:configurations.0
+intelliSenseMode	.vscode/c_cpp_properties.json	/^            "intelliSenseMode": "clang-x64"$/;"	s	object:configurations.0
+m_Group	strand/strand.cpp	/^    boost::thread_group m_Group;$/;"	m	class:BackGroundJobManager	typeref:typename:boost::thread_group	file:
+m_Group	worker-thread/WorkerThread.cpp	/^    boost::thread_group m_Group;$/;"	m	class:BackGroundJobManager	typeref:typename:boost::thread_group	file:
+m_IOService	async-tcp-chatting/client/ChattingTCPClient.cpp	/^    boost::asio::io_service& m_IOService;$/;"	m	class:ChatClient	typeref:typename:boost::asio::io_service &	file:
+m_Name	async-tcp-chatting/server/ServerSession.h	/^    std::string m_Name;$/;"	m	class:Session	typeref:typename:std::string
+m_PacketBuffer	async-tcp-chatting/client/ChattingTCPClient.cpp	/^    char m_PacketBuffer[MAX_RECEIVE_BUFFER_LEN * 2];$/;"	m	class:ChatClient	typeref:typename:char[]	file:
+m_PacketBuffer	async-tcp-chatting/server/ServerSession.h	/^    char m_PacketBuffer[MAX_RECEIVE_BUFFER_LEN*2];$/;"	m	class:Session	typeref:typename:char[]
+m_ReceiveBuffer	async-tcp-chatting/client/ChattingTCPClient.cpp	/^    std::array<char, 512> m_ReceiveBuffer;$/;"	m	class:ChatClient	typeref:typename:std::array<char,512>	file:
+m_ReceiveBuffer	async-tcp-chatting/server/ServerSession.h	/^    std::array<char, MAX_RECEIVE_BUFFER_LEN> m_ReceiveBuffer;$/;"	m	class:Session	typeref:typename:std::array<char,MAX_RECEIVE_BUFFER_LEN>
+m_ReceiveBuffer	async-tcp-echo/client/AsynchronousTCPClient.cpp	/^    std::array<char, 128> m_ReceiveBuffer;$/;"	m	class:TCP_Client	typeref:typename:std::array<char,128>	file:
+m_ReceiveBuffer	async-tcp-echo/server/AsynchronousTCPServer.cpp	/^    std::array<char, 128> m_ReceiveBuffer;$/;"	m	class:Session	typeref:typename:std::array<char,128>	file:
+m_ReceiveBuffer	async-udp-echo/client/AsynchronousUDPClient.cpp	/^    std::array<char, 128> m_ReceiveBuffer;$/;"	m	class:UDP_Client	typeref:typename:std::array<char,128>	file:
+m_ReceiveBuffer	async-udp-echo/server/AsynchronousUDPServer.cpp	/^    std::array<char, 128> m_ReceiveBuffer;$/;"	m	class:UDP_Server	typeref:typename:std::array<char,128>	file:
+m_SendDataQueue	async-tcp-chatting/client/ChattingTCPClient.cpp	/^    std::deque< char* > m_SendDataQueue;$/;"	m	class:ChatClient	typeref:typename:std::deque<char * >	file:
+m_SendDataQueue	async-tcp-chatting/server/ServerSession.h	/^    std::deque< char* > m_SendDataQueue;$/;"	m	class:Session	typeref:typename:std::deque<char * >
+m_SenderEndpoint	async-udp-echo/client/AsynchronousUDPClient.cpp	/^    boost::asio::ip::udp::endpoint m_SenderEndpoint;$/;"	m	class:UDP_Client	typeref:typename:boost::asio::ip::udp::endpoint	file:
+m_SenderEndpoint	async-udp-echo/server/AsynchronousUDPServer.cpp	/^    boost::asio::ip::udp::endpoint m_SenderEndpoint;$/;"	m	class:UDP_Server	typeref:typename:boost::asio::ip::udp::endpoint	file:
+m_SessionList	async-tcp-chatting/server/ChattingServer.h	/^    std::vector< Session* > m_SessionList;$/;"	m	class:ChatServer	typeref:typename:std::vector<Session * >
+m_SessionQueue	async-tcp-chatting/server/ChattingServer.h	/^    std::deque< int > m_SessionQueue;$/;"	m	class:ChatServer	typeref:typename:std::deque<int>
+m_Socket	async-tcp-chatting/client/ChattingTCPClient.cpp	/^    boost::asio::ip::tcp::socket m_Socket;$/;"	m	class:ChatClient	typeref:typename:boost::asio::ip::tcp::socket	file:
+m_Socket	async-tcp-chatting/server/ServerSession.h	/^    boost::asio::ip::tcp::socket m_Socket;$/;"	m	class:Session	typeref:typename:boost::asio::ip::tcp::socket
+m_Socket	async-tcp-echo/client/AsynchronousTCPClient.cpp	/^    boost::asio::ip::tcp::socket m_Socket;$/;"	m	class:TCP_Client	typeref:typename:boost::asio::ip::tcp::socket	file:
+m_Socket	async-tcp-echo/server/AsynchronousTCPServer.cpp	/^    boost::asio::ip::tcp::socket m_Socket;$/;"	m	class:Session	typeref:typename:boost::asio::ip::tcp::socket	file:
+m_Socket	async-udp-echo/client/AsynchronousUDPClient.cpp	/^    boost::asio::ip::udp::socket m_Socket;$/;"	m	class:UDP_Client	typeref:typename:boost::asio::ip::udp::socket	file:
+m_Socket	async-udp-echo/server/AsynchronousUDPServer.cpp	/^    boost::asio::ip::udp::socket m_Socket;$/;"	m	class:UDP_Server	typeref:typename:boost::asio::ip::udp::socket	file:
+m_Work	strand/strand.cpp	/^    boost::shared_ptr<boost::asio::io_service::work> m_Work;$/;"	m	class:BackGroundJobManager	typeref:typename:boost::shared_ptr<boost::asio::io_service::work>	file:
+m_Work	worker-thread/WorkerThread.cpp	/^    boost::shared_ptr<boost::asio::io_service::work> m_Work;$/;"	m	class:BackGroundJobManager	typeref:typename:boost::shared_ptr<boost::asio::io_service::work>	file:
+m_WriteMessage	async-tcp-echo/client/AsynchronousTCPClient.cpp	/^    std::string m_WriteMessage;$/;"	m	class:TCP_Client	typeref:typename:std::string	file:
+m_WriteMessage	async-tcp-echo/server/AsynchronousTCPServer.cpp	/^    std::string m_WriteMessage;$/;"	m	class:Session	typeref:typename:std::string	file:
+m_WriteMessage	async-udp-echo/client/AsynchronousUDPClient.cpp	/^    std::string m_WriteMessage;$/;"	m	class:UDP_Client	typeref:typename:std::string	file:
+m_WriteMessage	async-udp-echo/server/AsynchronousUDPServer.cpp	/^    std::string m_WriteMessage;$/;"	m	class:UDP_Server	typeref:typename:std::string	file:
+m_acceptor	async-tcp-chatting/server/ChattingServer.h	/^    boost::asio::ip::tcp::acceptor m_acceptor;$/;"	m	class:ChatServer	typeref:typename:boost::asio::ip::tcp::acceptor
+m_acceptor	async-tcp-echo/server/AsynchronousTCPServer.cpp	/^    boost::asio::ip::tcp::acceptor m_acceptor;$/;"	m	class:TCP_Server	typeref:typename:boost::asio::ip::tcp::acceptor	file:
+m_bIsAccepting	async-tcp-chatting/server/ChattingServer.h	/^    bool m_bIsAccepting;$/;"	m	class:ChatServer	typeref:typename:bool
+m_bIsLogin	async-tcp-chatting/client/ChattingTCPClient.cpp	/^    bool m_bIsLogin;$/;"	m	class:ChatClient	typeref:typename:bool	file:
+m_io_service	async-tcp-echo/client/AsynchronousTCPClient.cpp	/^    boost::asio::io_service& m_io_service;$/;"	m	class:TCP_Client	typeref:typename:boost::asio::io_service &	file:
+m_io_service	strand/strand.cpp	/^    boost::asio::io_service& m_io_service;$/;"	m	class:BackGroundJobManager	typeref:typename:boost::asio::io_service &	file:
+m_io_service	worker-thread/WorkerThread.cpp	/^    boost::asio::io_service& m_io_service;$/;"	m	class:BackGroundJobManager	typeref:typename:boost::asio::io_service &	file:
+m_lock	async-tcp-chatting/client/ChattingTCPClient.cpp	/^    CRITICAL_SECTION m_lock;$/;"	m	class:ChatClient	typeref:typename:CRITICAL_SECTION	file:
+m_nPacketBufferMark	async-tcp-chatting/client/ChattingTCPClient.cpp	/^    int m_nPacketBufferMark;$/;"	m	class:ChatClient	typeref:typename:int	file:
+m_nPacketBufferMark	async-tcp-chatting/server/ServerSession.h	/^    int m_nPacketBufferMark;$/;"	m	class:Session	typeref:typename:int
+m_nSeqNumber	async-tcp-chatting/server/ChattingServer.h	/^    int m_nSeqNumber;$/;"	m	class:ChatServer	typeref:typename:int
+m_nSeqNumber	async-tcp-echo/client/AsynchronousTCPClient.cpp	/^    int m_nSeqNumber;$/;"	m	class:TCP_Client	typeref:typename:int	file:
+m_nSeqNumber	async-tcp-echo/server/AsynchronousTCPServer.cpp	/^    int m_nSeqNumber;$/;"	m	class:TCP_Server	typeref:typename:int	file:
+m_nSeqNumber	async-udp-echo/client/AsynchronousUDPClient.cpp	/^    int m_nSeqNumber;$/;"	m	class:UDP_Client	typeref:typename:int	file:
+m_nSeqNumber	async-udp-echo/server/AsynchronousUDPServer.cpp	/^    int m_nSeqNumber;$/;"	m	class:UDP_Server	typeref:typename:int	file:
+m_nSessionID	async-tcp-chatting/server/ServerSession.h	/^    int m_nSessionID;$/;"	m	class:Session	typeref:typename:int
+m_pServer	async-tcp-chatting/server/ServerSession.h	/^    ChatServer* m_pServer;$/;"	m	class:Session	typeref:typename:ChatServer *
+m_pSession	async-tcp-echo/server/AsynchronousTCPServer.cpp	/^    Session* m_pSession;$/;"	m	class:TCP_Server	typeref:typename:Session *	file:
+main	async-read-file/AsyncReadFile.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	async-read-until/async_read_until.cpp	/^int main()$/;"	f	typeref:typename:int
+main	async-tcp-chatting/client/ChattingTCPClient.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	async-tcp-chatting/server/ServerMain.cpp	/^int main()$/;"	f	typeref:typename:int
+main	async-tcp-echo/client/AsynchronousTCPClient.cpp	/^int main()$/;"	f	typeref:typename:int
+main	async-tcp-echo/server/AsynchronousTCPServer.cpp	/^int main()$/;"	f	typeref:typename:int
+main	async-udp-echo/client/AsynchronousUDPClient.cpp	/^int main()$/;"	f	typeref:typename:int
+main	async-udp-echo/server/AsynchronousUDPServer.cpp	/^int main()$/;"	f	typeref:typename:int
+main	poll/poll.cpp	/^int main()$/;"	f	typeref:typename:int
+main	resolver/resolver.cpp	/^int main()$/;"	f	typeref:typename:int
+main	strand/strand.cpp	/^int main()$/;"	f	typeref:typename:int
+main	sync-tcp-echo/SynchronousTCPClient/SynchronousTCPClient.cpp	/^int main()$/;"	f	typeref:typename:int
+main	sync-tcp-echo/SynchronousTCPServer/SynchronousTCPServer.cpp	/^int main()$/;"	f	typeref:typename:int
+main	timer/Timer1/Timer1.cpp	/^int main()$/;"	f	typeref:typename:int
+main	timer/Timer2/Timer2.cpp	/^int main()$/;"	f	typeref:typename:int
+main	timer/Timer3/Timer3.cpp	/^int main()$/;"	f	typeref:typename:int
+main	timer/Timer4/Timer4.cpp	/^int main()$/;"	f	typeref:typename:int
+main	worker-thread/WorkerThread.cpp	/^int main()$/;"	f	typeref:typename:int
+nCount	timer/Timer2/Timer2.cpp	/^int nCount = 0;$/;"	v	typeref:typename:int
+nID	async-tcp-chatting/client/Protocol.h	/^    short nID;$/;"	m	struct:PACKET_HEADER	typeref:typename:short
+nID	async-tcp-chatting/server/Protocol.h	/^    short nID;$/;"	m	struct:PACKET_HEADER	typeref:typename:short
+nSize	async-tcp-chatting/client/Protocol.h	/^    short nSize;$/;"	m	struct:PACKET_HEADER	typeref:typename:short
+nSize	async-tcp-chatting/server/Protocol.h	/^    short nSize;$/;"	m	struct:PACKET_HEADER	typeref:typename:short
+name	.vscode/c_cpp_properties.json	/^            "name": "clang-x64",$/;"	s	object:configurations.0
+operator ()	async-read-until/async_read_until.cpp	/^    void operator()(const boost::system::error_code& error, boost::asio::streambuf& buffer)$/;"	f	struct:receiver	typeref:typename:void	file:
+post	strand/strand.cpp	/^    void post(F f)$/;"	f	class:BackGroundJobManager	typeref:typename:void	file:
+post	worker-thread/WorkerThread.cpp	/^    void post(F f)$/;"	f	class:BackGroundJobManager	typeref:typename:void	file:
+read_end	async-read-file/AsyncReadFile.cpp	/^void read_end(const boost::system::error_code& error,$/;"	f	typeref:typename:void
+receiver	async-read-until/async_read_until.cpp	/^struct receiver $/;"	s	file:
+result_type	async-read-until/async_read_until.cpp	/^    typedef void result_type;$/;"	t	struct:receiver	typeref:typename:void	file:
+szMessage	async-tcp-chatting/client/Protocol.h	/^    char szMessage[MAX_MESSAGE_LEN];$/;"	m	struct:PKT_NOTICE_CHAT	typeref:typename:char[]
+szMessage	async-tcp-chatting/client/Protocol.h	/^    char szMessage[MAX_MESSAGE_LEN];$/;"	m	struct:PKT_REQ_CHAT	typeref:typename:char[]
+szMessage	async-tcp-chatting/server/Protocol.h	/^    char szMessage[MAX_MESSAGE_LEN];$/;"	m	struct:PKT_NOTICE_CHAT	typeref:typename:char[]
+szMessage	async-tcp-chatting/server/Protocol.h	/^    char szMessage[MAX_MESSAGE_LEN];$/;"	m	struct:PKT_REQ_CHAT	typeref:typename:char[]
+szName	async-tcp-chatting/client/Protocol.h	/^    char szName[MAX_NAME_LEN]; $/;"	m	struct:PKT_NOTICE_CHAT	typeref:typename:char[]
+szName	async-tcp-chatting/client/Protocol.h	/^    char szName[MAX_NAME_LEN];$/;"	m	struct:PKT_REQ_IN	typeref:typename:char[]
+szName	async-tcp-chatting/server/Protocol.h	/^    char szName[MAX_NAME_LEN]; $/;"	m	struct:PKT_NOTICE_CHAT	typeref:typename:char[]
+szName	async-tcp-chatting/server/Protocol.h	/^    char szName[MAX_NAME_LEN];$/;"	m	struct:PKT_REQ_IN	typeref:typename:char[]
+version	.vscode/c_cpp_properties.json	/^    "version": 4$/;"	n
+~BackGroundJobManager	strand/strand.cpp	/^    ~BackGroundJobManager()$/;"	f	class:BackGroundJobManager	file:
+~BackGroundJobManager	worker-thread/WorkerThread.cpp	/^    ~BackGroundJobManager()$/;"	f	class:BackGroundJobManager	file:
+~ChatClient	async-tcp-chatting/client/ChattingTCPClient.cpp	/^    ~ChatClient() {$/;"	f	class:ChatClient	file:
+~ChatServer	async-tcp-chatting/server/ChattingServer.h	/^    ~ChatServer()$/;"	f	class:ChatServer
+~Session	async-tcp-chatting/server/ServerSession.cpp	/^Session::~Session()$/;"	f	class:Session
+~TCP_Server	async-tcp-echo/server/AsynchronousTCPServer.cpp	/^    ~TCP_Server()$/;"	f	class:TCP_Server	file:
+~UDP_Server	async-udp-echo/server/AsynchronousUDPServer.cpp	/^    ~UDP_Server()$/;"	f	class:UDP_Server	file:

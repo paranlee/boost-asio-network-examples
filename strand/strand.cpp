@@ -1,11 +1,10 @@
-#include <SDKDDKVer.h>
-
 #include <iostream>
 #include <string>
 
 #include <boost/asio.hpp>
 #include <boost/thread.hpp>
 #include <boost/bind.hpp>
+
 
 class BackGroundJobManager 
 {
